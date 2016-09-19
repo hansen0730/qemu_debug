@@ -3,3 +3,4 @@
 !qemu.sh
 !README.md
 !kernel_defconfig
+!generate_cscope.sh
