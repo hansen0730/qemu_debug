@@ -20,7 +20,7 @@ mkdir root
 sudo mount -t ext3 -o sync,nolazytime,atime,commit=1 root.ext3 root  
 
 # Build kernel
-cp kernel_defconfig <kernel_source>/.config  
+cp kernel_defconfig &lt;kernel_source&gt;/.config  
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- menuconfig  
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- zImage  
 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- dtbs  
