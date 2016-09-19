@@ -1,0 +1,8 @@
+::sysinit:/etc/init.d/rcS
+console::sysinit:/bin/sh
+tty0::askfirst:-/bin/sh
+tty1::askfirst:-/bin/sh
+tty7::askfirst:-/bin/sh
+::restart:/sbin/init
+::ctrlaltdel:/sbin/reboot
+::shutdown:/bin/umount -a -r
