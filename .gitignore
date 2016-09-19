@@ -1,0 +1,5 @@
+*
+!root
+!qemu.sh
+!README.md
+!kernel_defconfig
