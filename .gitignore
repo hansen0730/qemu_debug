@@ -4,4 +4,5 @@
 !README.md
 !kernel_defconfig
 !generate_cscope.sh
+!src_clean.sh
 !buildroot_defconfig
