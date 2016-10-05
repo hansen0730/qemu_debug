@@ -1,0 +1,14 @@
+#!/bin/bash
+
+switch=virbr0
+ 
+if [ -n "$1" ];then
+    tunctl -d $1
+    brctl delif ${switch} $1
+    ip link set $1 down
+    exit 0
+else
+    echo "Error: no interface specified"
+    exit 1
+fi
+

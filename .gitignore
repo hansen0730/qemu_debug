@@ -6,3 +6,5 @@
 !generate_cscope.sh
 !src_clean.sh
 !buildroot_defconfig
+!ifdown-tap0
+!ifup-tap0

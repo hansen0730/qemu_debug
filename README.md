@@ -46,3 +46,17 @@ make menuconfig
 make  
 cp output/target/* &lt;root_disk&gt;/ -ar  
 ==chown root:root &lt;root_disk&gt;/ -R==
+
+## Enable Network
+sudo apt-get install bridge-utils uml-utilities libvirt-bin  
+QEMU with arg  
+ -net nic,macaddr=00:e0:4c:11:xx:xx -net tap,ifname=tap0,script=ifup-tap0,downscript=ifdown-tap0  
+
+/etc/network/interfaces Append  
+auto virbr0  
+iface virbr0 inet dhcp  
+	bridge_ports eth0  
+	bridge_stp off  
+	bridge_fd 0  
+	bridge_maxwait 0  
+
